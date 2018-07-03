@@ -17,10 +17,10 @@ function dataReceiver() {
 
 function search(args) {
     return new Promise((resolve, reject) => {
-        const properties = getProperties(args);                //get all the parameters for search
+        const properties = getProperties(args);               
         try {
-            dataReceiver(firstUrl).then((data) => {        //get all data
-                const chars = data.map((el) => {           //creating a new array of characters
+            dataReceiver().then((data) => {        
+                const chars = data.map((el) => {
                     let flag = true;                       //flag to indicate that current character fits the criteria
                     for (let i = 0; i < properties.length; i++) {                         //checking multiple parameters
                         if (properties[i] === 'origin' || properties[i] === 'location') {       //"origin" and "location" parameters are objects
