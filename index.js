@@ -21,7 +21,7 @@ function main() {
         const result = func.filterResultData(data);
         if (result.length > 0) {
             const resultToConsole = func.makeResultReadable(result);
-            console.log(text);
+            console.log(resultToConsole);
             fs.writeFileSync(`${Date.now()}.json`, JSON.stringify(result, null, 2));
         }
         else console.log(`No matches found.`);
