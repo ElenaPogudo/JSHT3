@@ -30,7 +30,7 @@ function search(args) {
                             }
                         } else if (properties[i] === 'id') {
                             if (el.id !== args['id']) { // im not sure why but id from console read like bool true
-                                console.log(args['id']);
+                               // console.log(args['id']);
                                 addToRes = false;
                             }
                         }
