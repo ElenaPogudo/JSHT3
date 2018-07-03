@@ -1,7 +1,7 @@
 'use strict';
 const yargs = require("yargs");
 const fs = require("fs");
-const func = require("./Functions.js");
+const func = require("./functions.js");
 
 function main() {
     const args = yargs
