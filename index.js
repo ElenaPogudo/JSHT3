@@ -20,7 +20,7 @@ function main() {
         if (err) console.log(err);
         const result = func.filterResultData(data);
         if (result.length > 0) {
-            const text = func.makeResultReadable(result);
+            const resultToConsole = func.makeResultReadable(result);
             console.log(text);
             fs.writeFileSync(`${Date.now()}.json`, JSON.stringify(result, null, 2));
         }
