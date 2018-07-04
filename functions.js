@@ -46,6 +46,7 @@ function search(args) {
                 })
                 resolve(chars);
             })
+            .catch((err)=>{console.log(err)})
         } catch (err) {
             reject(err);
         }
